@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Entertainment & Art</title>
+  <link rel="stylesheet" type="text/css" href="news.css">
+  <link rel="icon" href="newspaper.png">
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<!-- Menu Bar --> 
+<nav>
+  <ul>
+    <li><img alt="" src="Untitled-1.png" id="submain"></li>
+    <li id="home"><a href="index.html" >Home</a></li>
+    <li id="sci"><a href="Sci.html">Science & Technology</a></li>
+    <li id="sent"><a href="Ent.html" >Entertainment & Art</a></li>
+    <li id="sports"><a href="Sport.html">Sport</a></li>
+    <li id="gaming"><a href="Gaming.html">Gaming</a></li>
+    <li class="Register"><a href="register.html">Login</a></li>
+    <li class="Register" id="firegister"><a href="register.html">Register </a></li>
+  </ul>
+</nav>
+
+<!-- slider --> 
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img alt="" class="slideImg"  src="taraji.jpg" >
+  <div class="text"><h4>Taraji P Henson: 'Hollywood didn't grasp my talent ...
+      <a class="showMore" href="Index.html" >show   more</a></h4></div>
+</div>
+
+<div class="mySlides fade">
+  <img alt="" class="slideImg"  src="joker.png"  >
+  <div class="text"><h4>Joker trailer : first footage of Batman spin-off released <br> By: Warner Bros... <a class="showMore" href="Index.html" >show more</a></h4></div>
+</div>
+
+<div class="mySlides fade">
+  <img alt="" class="slideImg"  src="painting.jpg" >
+  <div class="text"><h4>From Warhol to minimalism: how painting by numbers revolutionised art<br> By: Jonathan Jones... <a class="showMore" href="Index.html" >show more</a></h4></div>
+</div>
+
+</div>
+<br>
+<div class="dots" style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+    
+<!-- JS code of the slider --> 
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+    
+<!-- news --> 
+<div class="news_box">
+    <h2 id="news">Latest News</h2>
+    <!-- 1st row --> 
+    <img alt="" src="taraji.jpg" class="content_sub">
+    <img alt="" src="dumbo.jpg" class="content_sub">
+    <img alt="" src="joker.png" class="content_sub">
+    <div class="overcontent_sub">
+        <a href="#"><h2>Taraji P Henson: 'Hollywood didn't grasp my talent'</h2></a>
+        <p class="author">By: Ryan Gilbey </p>
+    </div>
+    <div class="overcontent_sub">
+        <a href="#"><h2>Dumbo review – this flying elephant fails to take off</h2></a>
+        <p class="author">By: Wendy Ide </p>
+    </div>
+    <div class="overcontent_sub">
+        <a href="#"><h2>Joker trailer : first footage of Batman spin-off released</h2></a>
+        <p class="author">By: Warner Bros </p>
+    </div>
+    <!-- 2nd row --> 
+    <div class="nextRows">
+        <img alt="" src="Dumboo.jpg" class="content_sub">
+        <img alt="" src="painting.jpg" class="content_sub">
+        <img alt="" src="newyork.jpg" class="content_sub">
+        <div class="overcontent_sub">
+            <a href="#"><h2>Dumbo soars to the top as Captain Marvel slips at UK box office</h2></a>
+            <p class="author">By: Charles Gant</p>
+        </div>
+        <div class="overcontent_sub">
+            <a href="#"><h2>From Warhol to minimalism: how painting by numbers revolutionised art</h2></a>
+            <p class="author">By: Jonathan Jones</p>
+        </div>
+        <div class="overcontent_sub">
+            <a href="#"><h2>The $500m Shed: inside New York's quilted handbag on wheels </h2></a>
+            <p class="author">By: Oliver Wainwright </p>
+        </div>
+    </div>
+    <!-- 3rd row -->
+    <div class="nextRows">
+        <img alt="" src="netflix.jpg" class="content_sub">
+        <img alt="" src="avici.jpg" class="content_sub">
+        <img alt="" src="amazon.jpg" class="content_sub">
+        <div class="overcontent_sub">
+            <a href="#"><h2> What's on Netflix and Amazon this month – April 2019</h2></a>
+            <p class="author"> Tv and Film </p>
+        </div>
+        <div class="overcontent_sub">
+            <a href="#"><h2>Avicii's family announce posthumous album by Swedish DJ</h2></a>
+            <p class="author">By: Laura Snapes</p>
+        </div>
+        <div class="overcontent_sub">
+            <a href="#"><h2>Amazon shoppers misled by 'bundled' star-ratings and reviews</h2></a>
+            <p class="author">By: Hilary Osborne</p>
+        </div>
+    </div>
+</div>
+    
+<!-- Pagination --> 
+<div class="center">
+  <div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#" class="active">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+  </div>
+</div>
+    
+<!-- footer -->  
+<div class="footer">
+    <h2 class="footerp">Explore Up2Date</h2>
+  <h2 class="footerp"><a href="About.html" >About</a></h2>
+  <div class="about">
+    <p> We deliver daily news to you <br>  instantly wherever you are <p>
+    <a id="link" href="About.html" >FAQ</a>
+  </div>
+
+      
+    <h2 class="footerp"><a href="Contact%20Us.html" >Contact us</a></h2>
+    <div class="footerbox">
+      <p><a href="Index.html">Home</a></p>
+      <p><a href="Sci.html">Science & Technology</a></p>
+      <p><a href="Ent.html" >Entertainment & Art</a></p>
+      <p><a href="Sport.html">Sport</a></p>
+      <p><a href="Gaming.html">Gaming</a></p>
+    </div>
+    <div class="footerbox">
+    </div>
+    <div class="footerbox">
+     <p><a href="mailto:contactus@up2date.com" class="mail">Contactus@up2date.com</a></p> 
+      <p><a href="mailto:youssef190346@bue.edu.eg" class="mail">Services@bue.edu.eg</a></p> 
+      <p>Address: The British University in Egypt</p> 
+      <p>Tel: (+20) 1201493395</p>
+      <p>Fax: 010200203R9</p>
+    </div>    
+</div>
+</div>
+</body>
+</html>

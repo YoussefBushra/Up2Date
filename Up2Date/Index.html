@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Up2Date</title>
+	<link rel="stylesheet" type="text/css" href="news.css">
+    <link rel="icon" href="newspaper.png">
+    <link rel="stylesheet" type="text/css" href="login.css">
+
+   <meta charset="UTF-8">
+ </head>
+<body>
+<img alt="" src="Untitled-1.png" id="main">
+<nav id="homenav">
+	<ul>
+		<li><img alt="" src="Untitled-1.png"></li>
+		<li id="shome"><a href="index.html" >Home</a></li>
+		<li id="sci"><a href="Sci.html">Science & Technology</a></li>
+		<li id="ent"><a href="Ent.html" >Entertainment & Art</a></li>
+		<li id="sports"><a href="Sport.html">Sport</a></li>
+		<li id="gaming"><a href="Gaming.html">Gaming</a></li>
+		<li class="Register" ><a href="register.html">Login</a></li>
+		<li class="Register" id="firegister"><a href="register.html">Register </a></li>
+		<li> <input type="text" name="search" placeholder="Search.."> </li>
+	</ul>
+</nav>
+    
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" id="email" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+<div class="news_box">
+<h2 id="news">Latest News</h2>
+<img alt="" src="avengers.jpg" class="content">
+<img alt="" src="Elon%20Musk.jpg" class="content">
+<img alt="" src="battlefield.jpg" class="content">
+<div class="overcontent">
+<a href="#"><h2>Avengers End Game</h2></a>
+<p>the Avengers assemble once more in order to undo Thanos' actions and restore order.</p>
+<a href="Ent.html"><h4 class="cEnt">Entertainment & Art</h4></a>
+</div>
+    <div class="overcontent">
+        <a href="#"><h2>Elon Musk</h2></a>
+        <p> Elon Musk ordered to work things out with the SEC over his tweets</p>
+        <a href="Sci.html"><h4 class="cSci">Science & Technology</h4></a>
+    </div>
+<div class="overcontent">
+<a href="#"><h2>Battle field V Update</h2></a>
+<p>Battle field V newest realase with the new battle royale mode</p>
+<a href="Gaming.html"><h4 class="cGaming">Gaming</h4></a>
+</div>
+</div>
+<div class="news_box">
+<h2 id="nGaming">Gaming</h2>
+<img alt="" src="Fallout.jpg" class="content">
+<img alt="" src="gamingbar.png" class="content">
+<img alt="" src="battlefield.jpg" class="content">
+<div class="overcontent">
+<a href="#"><h2>Fallout: New Vegas</h2></a>
+<p>Fallout: New Vegas mod adds a post-game that reflects your choices</p>
+<a href="Gaming.html"><h4 class="cGaming">Gaming</h4></a>
+</div>
+<div class="overcontent">
+<a href="gamingbar.html"><h2>The Windows Game Bar</h2></a>
+<p>The Windows Game Bar is getting new widgets, including Spotify and a meme-maker</p>
+<a href="Gaming.html"><h4 class="cGaming">Gaming</h4></a>
+</div>
+<div class="overcontent">
+<a href="#"><h2>Battle field V Update</h2></a>
+<p>Battle field V newest relase with the new battle royale mode</p>
+<a href="Gaming.html"><h4 class="cGaming">Gaming</h4></a>
+</div>
+</div>
+<div class="news_box">
+<h2 id="nSci">Science & Technology</h2>
+    <img alt="" src="Elon%20Musk.jpg" class="content">
+    <img alt="" src="gmail.png" class="content">
+    <img alt="" src="alexa.jpg" class="content">
+    <div class="overcontent">
+        <a href="#"><h2>Elon Musk</h2></a>
+        <p> Elon Musk ordered to work things out with the SEC over his tweets</p>
+        <a href="Sci.html"><h4 class="cSci">Science & Technology</h4></a>
+    </div>
+    <div class="overcontent">
+        <a href="#"><h2>Email Subjects</h2></a>
+        <p>Gmail’s Smart Compose will now suggest email subjects</p>
+        <a href="Sci.html"><h4 class="cSci">Science & Technology</h4></a>
+
+    </div>
+    <div class="overcontent">
+        <a href="#"><h2>Amazon’s Alexa</h2></a>
+        <p>Amazon’s Alexa now handles patient health information </p>
+        <a href="Sci.html"><h4 class="cSci">Science & Technology</h4></a>
+
+</div>
+</div>
+
+<div class="news_box">
+<h2 class="nEnt">Entertainment & Art</h2>
+<img alt="" src="avengers.jpg" class="content">
+<img alt="" src="taraji.jpg" class="content">
+<img alt="" src="dumbo.jpg" class="content">
+<div class="overcontent">
+<a href="#"><h2>Avengers End Game</h2></a>
+<p>the Avengers assemble once more in order to undo Thanos' actions and restore order.</p>
+<a href="Ent.html"><h4 class="cEnt">Entertainment & Art</h4></a>
+</div>
+<div class="overcontent">
+<a href="#"><h2>Taraji P Henson:</h2></a>
+<p>'Hollywood didn't grasp my talent'</p>
+<a href="Ent.html"><h4 class="cEnt">Entertainment & Art</h4></a>
+</div>
+<div class="overcontent">
+<a href="#"><h2>Dumbo review</h2></a>
+<p>this flying elephant fails to take off</p>
+<a href="Ent.html"><h4 class="cEnt">Entertainment & Art</h4></a>
+</div>
+</div>
+<div class="center">
+  <div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#" class="active">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+  </div>
+</div>
+<div class="footer">
+    <h2 class="footerp">Explore Up2Date</h2>
+	<h2 class="footerp"><a href="About.html" >About</a></h2>
+  <div class="about">
+    <p> We deliver daily news to you <br>  instantly wherever you are <p>
+    <a id="link" href="About.html" >FAQ</a>
+  </div>
+
+      
+    <h2 class="footerp"><a href="Contact%20Us.html" >Contact us</a></h2>
+    <div class="footerbox">
+      <p><a href="Index.html">Home</a></p>
+      <p><a href="Sci.html">Science & Technology</a></p>
+      <p><a href="Ent.html" >Entertainment & Art</a></p>
+      <p><a href="Sport.html">Sport</a></p>
+      <p><a href="Gaming.html">Gaming</a></p>
+    </div>
+    <div class="footerbox">
+    </div>
+    <div class="footerbox">
+     <p><a href="mailto:contactus@up2date.com" class="mail">Contactus@up2date.com</a></p> 
+      <p><a href="mailto:youssef190346@bue.edu.eg" class="mail">Services@bue.edu.eg</a></p> 
+      <p>Address: The British University in Egypt</p> 
+      <p>Tel: (+20) 1201493395</p>
+      <p>Fax: 010200203R9</p>
+    </div>    
+</div>
+
+</body>
+</html>

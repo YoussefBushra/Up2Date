@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Science & Technology</title>
+  <link rel="stylesheet" type="text/css" href="news.css">
+    <link rel="icon" href="newspaper.png">
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<!-- Menu Bar --> 
+<nav>
+  <ul>
+    <li><img alt="" src="Untitled-1.png" id="submain"></li>
+    <li id="home"><a href="index.html" >Home</a></li>
+    <li id="ssci"><a href="Sci.html">Science & Technology</a></li>
+    <li id="ent"><a href="Ent.html" >Entertainment & Art</a></li>
+    <li id="sports"><a href="Sport.html">Sport</a></li>
+    <li id="gaming"><a href="Gaming.html">Gaming</a></li>
+    <li class="Register"><a href="register.html">Login</a></li>
+    <li class="Register" id="firegister"><a href="register.html">Register </a></li>
+  </ul>
+</nav>
+
+<!-- slider --> 
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img alt="" class="slideImg"  src="Elon%20Musk.jpg" >
+  <div class="text"><h4><strong>Elon Musk ordered to work things out with the SEC over his tweets ...
+      <a class="showMore" href="Index.html" >show   more</a></strong></h4></div>
+</div>
+
+<div class="mySlides fade">
+  <img alt="" class="slideImg"  src="Live-Streaming-Events.jpg"  >
+  <div class="text"><h4><strong>The world is turning against live streaming <br> By:Casey Newton... <a class="showMore" href="Index.html" >show more</a></strong></h4></div>
+</div>
+
+<div class="mySlides fade">
+  <img alt="" class="slideImg"  src="battlefield.jpg" >
+  <div class="text"><h4><strong>Battle field V Update <br> Battle field V newest relase with the new battle royale mode ... <a class="showMore" href="Index.html" >show more</a></strong></h4></div>
+</div>
+
+</div>
+<br>
+<div class="dots" style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+    
+<!-- JS code of the slider --> 
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+    
+<!-- news --> 
+<div class="news_box">
+    <h2 id="news">Latest News</h2>
+    <!-- 1st row --> 
+    <img alt="" src="Elon%20Musk.jpg" class="content_sub">
+    <img alt="" src="gmail.png" class="content_sub">
+    <img alt="" src="alexa.jpg" class="content_sub">
+    <div class="overcontent_sub">
+        <a href="#"><h2>Elon Musk ordered to work things out with the SEC over his tweets</h2></a>
+        <p class="author">By: Andrew J. Hawkins</p>
+    </div>
+    <div class="overcontent_sub">
+        <a href="#"><h2>Gmail’s Smart Compose will now suggest email subjects</h2></a>
+        <p class="author">By: Shannon Liao</p>
+    </div>
+    <div class="overcontent_sub">
+        <a href="#"><h2>Amazon’s Alexa now handles patient health information</h2></a>
+        <p class="author">By: Angela Chen </p>
+    </div>
+    <!-- 2nd row --> 
+    <div class="nextRows">
+        <img alt="" src="Live-Streaming-Events.jpg" class="content_sub">
+        <img alt="" src="Ai.jpg" class="content_sub">
+        <img alt="" src="windows10.jpg" class="content_sub">
+        <div class="overcontent_sub">
+            <a href="#"><h2>The world is turning against live streaming</h2></a>
+            <p class="author">By:Casey Newton  </p>
+        </div>
+        <div class="overcontent_sub">
+            <a href="#"><h2>The problem with AI ethics</h2></a>
+            <p class="author">By: James Vincent</p>
+        </div>
+        <div class="overcontent_sub">
+            <a href="#"><h2>Elon Musk ordered to work things out with the SEC over his tweets</h2></a>
+            <p class="author">By: Andrew J. Hawkins</p>
+        </div>
+    </div>
+    <!-- 3rd row -->
+    <div class="nextRows">
+        <img alt="" src="avengers.jpg" class="content_sub">
+        <img alt="" src="uber.jpg" class="content_sub">
+        <img alt="" src="battlefield.jpg" class="content_sub">
+        <div class="overcontent_sub">
+            <a href="#"><h2>Avengers End Game</h2></a>
+            <p>the Avengers assemble once more in order to undo Thanos' actions and restore order.</p>
+        </div>
+        <div class="overcontent_sub">
+            <a href="#"><h2>Uber Buys Careem</h2></a>
+            <p>Uber buys rival Careem in $3.1 billion deal to dominate ride-hailing in ...</p>
+        </div>
+        <div class="overcontent_sub">
+            <a href="#"><h2>Battle field V Update</h2></a>
+            <p>Battle field V newest relase with the new battle royale mode</p>
+        </div>
+    </div>
+</div>
+    
+<!-- Pagination --> 
+<div class="center">
+  <div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#" class="active">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+  </div>
+</div>
+    
+<!-- footer -->  
+<div class="footer">
+    <h2 class="footerp">Explore Up2Date</h2>
+  <h2 class="footerp"><a href="About.html" >About</a></h2>
+  <div class="about">
+    <p> We deliver daily news to you <br>  instantly wherever you are <p>
+    <a id="link" href="About.html" >FAQ</a>
+  </div>
+
+      
+    <h2 class="footerp"><a href="Contact%20Us.html" >Contact us</a></h2>
+    <div class="footerbox">
+      <p><a href="Index.html">Home</a></p>
+      <p><a href="Sci.html">Science & Technology</a></p>
+      <p><a href="Ent.html" >Entertainment & Art</a></p>
+      <p><a href="Sport.html">Sport</a></p>
+      <p><a href="Gaming.html">Gaming</a></p>
+    </div>
+    <div class="footerbox">
+    </div>
+    <div class="footerbox">
+     <p><a href="mailto:contactus@up2date.com" class="mail">Contactus@up2date.com</a></p> 
+      <p><a href="mailto:youssef190346@bue.edu.eg" class="mail">Services@bue.edu.eg</a></p> 
+      <p>Address: The British University in Egypt</p> 
+      <p>Tel: (+20) 1201493395</p>
+      <p>Fax: 010200203R9</p>
+    </div>    
+</div>
+</body>
+</html>
